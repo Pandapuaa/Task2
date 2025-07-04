@@ -1,33 +1,17 @@
-# Bash Notes App Project (Ubuntu Version)
+OUT PUT OF NOTES.SH
 
-## Features
+root@DESKTOP-A366JG0:/home/ubuntu# ./notes.sh add "This is my first note"
+Note added.
+root@DESKTOP-A366JG0:/home/ubuntu# ./notes.sh list
+All Notes:
+This is my first note
+This is my first note
+root@DESKTOP-A366JG0:/home/ubuntu# ./notes.sh search first
+This is my first note
+This is my first note
+root@DESKTOP-A366JG0:/home/ubuntu#
 
-- Simple CLI Notes Manager using Bash
-- Add, List, and Search notes
-- Case-insensitive search
-- Notes stored in a text file (`notes.txt`)
 
-## Git Workflow
-
-- Initialized a Git repo
-- Created `add-feature` branch (add & list functionality)
-- Created `search-feature` branch (search functionality)
-- Merged both into `main`
-
-## GitHub
-
-- Repo pushed to GitHub
-- Pull Request created from `add-feature` to `main`
-- GitHub Issue created: `"search isn't case-insensitive"`
-
-## Docker (Ubuntu)
-
-- Base image: `ubuntu:latest`
-- Script is copied to `/app`
-- Default CMD lists all notes
-- Optional volume used to persist notes (`/app`)
-
-### Docker Commands
 
 ```bash
 # Build the image
